@@ -31,9 +31,9 @@ def prediction(merchantName, transactionAmount, currentBalance, availableMoney, 
     prediction = classifier.predict(sample)[0]
      
     if prediction == True:
-        pred = 'fraudulent transaction '
+        pred = 'fraudulent'
     else:
-        pred = 'non-fraudulent transaction '
+        pred = 'non-fraudulent'
     return pred
 
 # this is the main function in which we define our webpage  
